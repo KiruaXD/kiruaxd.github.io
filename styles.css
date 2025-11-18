@@ -1,0 +1,217 @@
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-color: #0b0216; /* dark purple */
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+}
+header{
+    background-color: #2a003b;
+    padding:20px;
+    
+}
+header > h1{
+    color: white;
+    background-color: #2a003b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 80px;              /* space between left + right */
+    width: 80%;             /* prevents elements from going edge-to-edge */
+    margin: 0 auto;         /* centers the whole section */
+    padding: 60px 0;
+}
+
+.intro-left {
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left:0%;
+}
+
+.intro-right {
+    flex: 1;
+}
+
+.intro-left h2 {
+    margin: 0;
+    padding: 5px 0;
+}
+.about-section > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-left h2 {
+    font-size: 3.5rem;      
+    color: white;           
+    margin: 0;
+    text-align: right;      
+}
+
+.intro-left h1 {
+    font-size: 3.0rem;     
+    color: #c51b1b;         
+    margin: 0;
+    text-align: right;      
+}
+
+
+    .divider {
+    width: 3px;
+    height: 200px;
+    background: #ff2e2e;
+
+    }
+    .intro-right {
+    max-width: 400px;
+    font-size: 18px;
+    color: #c51b1b;
+    }
+    .resume-btn {
+    display: inline-block;
+    width: auto; 
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background: #ff2e2e;
+    text-decoration: none;
+    border-radius: 6px;
+    max-width: fit-content;
+    }
+    
+    
+    /* Skills */
+    .skills-section {
+        color : #ffffff;
+        text-align: center;
+        padding: 50px;
+        
+    }
+
+    .skills-section>ul{
+        max-width: fit-content;
+        margin:auto;
+    }
+    .skills-grid {
+        list-style-type: none;          /* bullets */            /* space for bullets */
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));  /* two columns */
+        gap: 10px 40px;                 /* spacing between items */
+        font-size: 1.1rem;
+        padding : 0;
+    }
+    .skills-grid li {
+    padding: 0 0;
+    color: #ffb3c9;
+    text-align: left;
+    }
+    
+    
+
+    .projects-wrapper {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .projects-section>h2{
+        color:white;
+    }
+    .projects-slider {
+        display: flex;
+        gap: 20px;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .project-card {
+        flex: 0 0 260px;
+        background: #2a003b;
+        padding: 20px;
+        border-radius: 10px;
+        color: #ff2e2e;
+        border: 2px solid #ff2e2e;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .project-card>p{
+        color : #ffb3c9;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-4px);
+    }
+    
+    .proj-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #ff2e2e;
+        border: none;
+        padding: 10px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 6px;
+    }
+
+    .projects-section {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding: 40px;
+        overflow: hidden; /* prevents arrows from clipping out */
+      }
+    
+    .left-btn {
+        left: -20px;
+    }
+    
+    .right-btn {
+        right: -20px;
+    }
+    
+    
+    
+    /* Footer */
+    footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a003b;
+    padding-bottom: 50px;
+    }
+    footer a {
+    margin: 0 10px;
+    color: #ff2e2e;
+    text-decoration: none;
+    }
+
+    footer>div{
+        margin: 0 10px;
+        color: #ff2e2e;
+        text-decoration: none;
+        padding-top: 10px;
+    }
+    

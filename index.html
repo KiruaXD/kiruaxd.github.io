@@ -1,0 +1,111 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name | Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+<h1>PORTFOLIO</h1>
+</header>
+
+
+<section class="about-section">
+<div class="intro-left">
+<h2 class="hello">Hello, I am </h2>
+<h1>Yogith G</h1>
+</div>
+<div class="divider"></div>
+<div class="intro-right">
+<p>
+I am a Computer Science graduate focused on C++, OpenGL, real-time graphics,
+and game engine systems. I build rendering tools, engine components,
+and gameplay systems with a focus on performance and clean architecture.
+</p>
+<a class="resume-btn" href="assets/resume.pdf" download>Resume</a>
+</div>
+</section>
+
+
+<section class="skills-section">
+<h2>Skills</h2>
+<ul class="skills-grid">
+<li>C++</li>
+<li>OpenGL</li>
+<li>Java</li>
+<li>Unity</li>
+<li>Unreal Engine</li>
+<li>Salesforce Apex</li>
+</ul>
+</section>
+
+
+<section class="projects-section">
+    <h2>Projects</h2>
+
+    <div class="projects-wrapper">
+
+        <button class="proj-btn left-btn">&#10094;</button>
+
+        <div class="projects-slider">
+
+            <div class="project-card" onclick="window.open('https://github.com/KiruaXD/OpenGL-Intro','_blank')">
+                <h3>OpenGL Intro</h3>
+                <p>Modern OpenGL basics, shaders, buffers, and GPU rendering.</p>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/KiruaXD/Java-Project','_blank')">
+                <h3>Ace (Java Game)</h3>
+                <p>2D engine-like game with networking, particles, and physics.</p>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/KiruaXD/ARSculp','_blank')">
+                <h3>ARSculp</h3>
+                <p>Unity AR artifact reconstruction using Vuforia.</p>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/KiruaXD/HelloAR','_blank')">
+                <h3>Hello AR</h3>
+                <p>Beginner AR using ARCore + AR Foundation.</p>
+            </div>
+
+        </div>
+
+        <button class="proj-btn right-btn">&#10095;</button>
+
+    </div>
+</section>
+
+
+
+<footer>
+<a href="https://www.instagram.com/k1ru4xd/" target="_blank">Instagram</a>
+<a href="https://www.youtube.com/@dreco8995" target="_blank">YouTube</a>
+<a href="https://www.linkedin.com/in/yogith-g/" target="_blank">LinkedIn</a>
+<div class = "email">Email : yogithgkxd@gmail.com</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    const slider = document.querySelector(".projects-slider");
+    const leftBtn = document.querySelector(".left-btn");
+    const rightBtn = document.querySelector(".right-btn");
+
+    function getCardWidth() {
+        const card = slider.querySelector(".project-card");
+        return card.offsetWidth + 20; // +gap
+    }
+
+    leftBtn.onclick = () => slider.scrollLeft -= getCardWidth();
+    rightBtn.onclick = () => slider.scrollLeft += getCardWidth();
+</script>
